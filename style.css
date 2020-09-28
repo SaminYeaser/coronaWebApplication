@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.carousel{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 3%;
+}
+.footer{
+    background-color: #691eff;
+    height: 5vh;
+    color: #ff620e;
+    padding: 0;
+}
+@media screen and (max-width : 1500px) {
+    .footer {
+        height: 10vh;
+    }
+}
+@media screen and (max-width : 600px) {
+    .footer {
+        height: 15vh;
+    }
+}
