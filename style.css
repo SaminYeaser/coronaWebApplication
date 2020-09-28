@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #f1ffed;
+}
 .carousel{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 3%;
+    background-color: #f1ffed;
 }
 .footer{
-    background-color: #691eff;
+    background-color: #d1ffbb;
     height: 5vh;
     color: #ff620e;
     padding: 0;
