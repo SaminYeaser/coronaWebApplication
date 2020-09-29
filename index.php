@@ -1,3 +1,26 @@
+<!--php for API-->
+
+<?php
+
+$api_url = 'https://coronavirus-19-api.herokuapp.com/countries/bangladesh';
+
+// Read JSON file
+$json_data = file_get_contents($api_url);
+
+// Decode JSON data into PHP array
+$response_data = json_decode($json_data, true);
+
+// All user data exists in 'data' object
+$country = $response_data['country'];
+$cases = $response_data['cases'];
+$deaths = $response_data['deaths'];
+$today_dead = $response_data['todayDeaths'];
+$total_test = $response_data['totalTests'];
+$active = $response_data['active'];
+$recovered = $response_data['recovered'];
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -131,7 +154,19 @@
         </div>
     </div>
 </div>
-
+<div class="bangladesh">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Current Situation of Bangladesh</h1>
+                <h3>Total Cases: <?php echo $cases?></h3>
+                <h3>Total Death: <?php echo $deaths?></h3>
+                <h3>Cases of Today: <?php echo $today_dead?></h3>
+                <h3>Totoal Test: <?php echo $total_test?></h3>
+            </div>
+        </div>
+    </div>
+</div>
 <?php include_once 'footer.php'?>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -142,6 +177,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+
+
+
 
 </body>
 </html>
