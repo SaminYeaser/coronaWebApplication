@@ -34,29 +34,7 @@ $recovered = $response_data['recovered'];
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">COVID-19</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Test Your Self</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Table</a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-</div>
+<?php include_once 'header.php'?>
 <div class="slider">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
