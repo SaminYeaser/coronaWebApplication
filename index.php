@@ -132,6 +132,7 @@ $recovered = $response_data['recovered'];
         </div>
     </div>
 </div>
+<section>
 <div class="bangladesh" id="bangladesh">
     <div class="container">
         <div class="row">
@@ -145,6 +146,7 @@ $recovered = $response_data['recovered'];
         </div>
     </div>
 </div>
+</section>
 <?php include_once 'footer.php'?>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
