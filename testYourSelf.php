@@ -25,7 +25,7 @@ if(isset($_POST['submit'])){
     if($checkbox2 == 1){
         $assesment1 = 2;
     }else if ($checkbox1>=2){
-        for($i = 1; $i<$checkbox1;$i++){
+        for($i = 0; $i<$checkbox1;$i++){
             $assesment1 = $assesment1 + 2;
         }
     }
