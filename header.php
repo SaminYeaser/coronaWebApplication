@@ -18,7 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Table</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="#bangladesh">Bangladesh</a>
+                </li>
             </ul>
         </div>
     </nav>

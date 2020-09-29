@@ -2,6 +2,7 @@
 include_once 'db.php';
 
 if(isset($_POST['submit'])){
+    $tem_assesment = 0;
     $assesment = 0;
     $assesment1 = 0;
     $age = $_POST['age'];
@@ -13,6 +14,10 @@ if(isset($_POST['submit'])){
     $sum = 0;
     $covid = '';
 
+    if($temp>100.9){
+       $tem_assesment = 2;
+    }
+
     if($checkbox1 == 1){
         $assesment = 3;
     }else if ($checkbox1>=2){
@@ -22,14 +27,14 @@ if(isset($_POST['submit'])){
         $assesment = $assesment + 3;
     }
 
-    if($checkbox2 == 1){
-        $assesment1 = 2;
-    }else if ($checkbox1>=2){
-        for($i = 0; $i<$checkbox1;$i++){
+    if($checkbox2>=1){
+        for($i=0;$i<$checkbox2;$i++){
+
             $assesment1 = $assesment1 + 2;
         }
+
     }
-    $sum = $assesment + $assesment1;
+    $sum = $assesment + $assesment1 + $tem_assesment;
 
     if($sum<5){
         $covid = 'Negative';

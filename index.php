@@ -132,7 +132,7 @@ $recovered = $response_data['recovered'];
         </div>
     </div>
 </div>
-<div class="bangladesh">
+<div class="bangladesh" id="bangladesh">
     <div class="container">
         <div class="row">
             <div class="col-12">
