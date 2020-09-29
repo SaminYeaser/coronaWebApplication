@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 <div class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">COVID-19</a>
@@ -11,7 +13,7 @@
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Test Your Self</a>
+                    <a class="nav-link" href="<?php echo 'testYourSelf.php'?>">Test Your Self</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Table</a>
