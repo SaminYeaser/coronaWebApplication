@@ -31,3 +31,12 @@ body{
         height: 15vh;
     }
 }
+.form-container{
+    padding-top: 10%;
+}
+.empty{
+    margin-bottom: 10%;
+}
+.form-check-input{
+    padding-right: 20px;
+}
