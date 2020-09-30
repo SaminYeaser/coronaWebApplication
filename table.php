@@ -3,6 +3,11 @@
 require_once 'db.php';
 require_once 'header.php';
 
+session_start();
+if(!isset($_SERVER['HTTP_REFERER'])){
+    header('location: index.php');
+}
+
 $sql = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql);
 $rows = [];
