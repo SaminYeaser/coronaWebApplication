@@ -1,3 +1,13 @@
+<style>
+    .footer{
+        position: relative;
+
+        bottom: 0;
+        width: 100%;
+
+        text-align: center;
+    }
+</style>
 <div class="footer">
     <div class="container-fluid">
         <div class="row">
