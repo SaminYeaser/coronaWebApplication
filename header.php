@@ -29,7 +29,7 @@
                     <a class="nav-link" href="<?php echo 'testYourSelf.php'?>">Test Your Self</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Table</a>
+                    <a class="nav-link" href="<?php echo 'table.php'?>">Table</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#bangladesh">Bangladesh</a>
