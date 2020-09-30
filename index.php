@@ -140,7 +140,7 @@ $recovered = $response_data['recovered'];
                 <h1>Current Situation of Bangladesh</h1>
                 <h3>Total Cases: <?php echo $cases?></h3>
                 <h3>Total Death: <?php echo $deaths?></h3>
-                <h3>Cases of Today<?php echo '('.date("d/m/Y").')'?>: <?php echo $today_dead?></h3>
+                <h3>New Death Today<?php echo '('.date("d/m/Y").')'?>: <?php echo $today_dead?></h3>
                 <h3>Totoal Test: <?php echo $total_test?></h3>
             </div>
         </div>
