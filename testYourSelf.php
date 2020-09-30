@@ -9,6 +9,8 @@ if (isset($_POST['submit'])) {
     $date = $_POST['date'];
     $gender = $_POST['gender'];
     $temp = $_POST['temp'];
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
     $checkbox1 = count($_POST['info1']);
     $checkbox2 = count($_POST['info2']);
     $sum = 0;
@@ -46,7 +48,7 @@ if (isset($_POST['submit'])) {
         $covid = 'Positive';
     }
 
-    $query = "INSERT INTO users(age, sex, temp, assesDate, score, result) VALUES ('{$age}','{$gender}','{$temp}','{$date}','{$sum}','{$covid}')";
+    $query = "INSERT INTO users(firstname, lastname, age, sex, temp, assesDate, score, result) VALUES ('{$firstname}','{$lastname}','{$age}','{$gender}','{$temp}','{$date}','{$sum}','{$covid}')";
     $creat_user_query = mysqli_query($conn, $query);
     if (!$creat_user_query) {
         die("Query Failed" . mysqli_error($conn));
@@ -84,6 +86,21 @@ if (isset($_POST['submit'])) {
                 <form action="" method="post">
                     <div class="form">
                         <div class="container">
+                            <div class="name">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h2>Your First Name</h2>
+                                        <input name="firstname" type="text" placeholder="Your First Name" style="width: 30%" required>
+                                    </div>
+                                    <div class="col-6">
+                                        <h2>Your Last Name</h2>
+                                        <input name="lastname" type='text' placeholder="Your Last Name" style="width: 30%" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <br>
+                            </div>
                             <div class="first">
                                 <div class="row">
                                     <div class="col-6">
