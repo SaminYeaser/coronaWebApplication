@@ -92,10 +92,10 @@ if(!isset($_SERVER['HTTP_REFERER'])){
                    echo "<h2 style=\"text-align: center\" >Highly chance of COVID-19 affected. As soon as possible contact these number: <br><b class='bg-danger'>National Call Center - 333</b><br>
 <b class='bg-danger'>Specialist Call Center - 09611677777</b><br>
 <b class='bg-danger'>national help center - 109</b></h2>";
-               }elseif ($_SESSION['sum']>7){
-                   echo "<h2 style=\"text-align: center\" >Almost confirmed case of COVID-19 positive. Please contact the hospital and admit yourself in it. Contact these number: <b>National Call Center - 333</b><br>
-<b>Specialist Call Center - 09611677777</b><br>
-<b>national help center - 109</b></h2>";
+               }elseif ($_SESSION['sum']>=7){
+                   echo "<h2 style=\"text-align: center\" >Almost confirmed case of COVID-19 positive. Please contact the hospital and admit yourself in it. Contact these number: <br><b class='bg-danger'>National Call Center - 333</b><br>
+<b class='bg-danger'>Specialist Call Center - 09611677777</b><br>
+<b class='bg-danger'>national help center - 109</b></h2>";
                }
                ?>
             </div>
