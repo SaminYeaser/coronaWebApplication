@@ -2,6 +2,9 @@
 
 
 session_start();
+if(!isset($_SERVER['HTTP_REFERER'])){
+    header('location: index.php');
+}
 
 //if (isset($_POST['submit'])) {
 //    $tem_assesment = 0;
@@ -79,7 +82,7 @@ session_start();
                <?php
 
                if($_SESSION['sum']<5){
-                   echo "<h2 style=\"text-align: center\" >Merely have chance to get affected by COVID-19. Keep isolated and follow this <a href='https://www.weforum.org/agenda/2020/04/covid-19-coronavirus-patient-home-care/'>advice</a> advice.</h2>";
+                   echo "<h2 style=\"text-align: center\" >Merely have chance to get affected by COVID-19. Keep isolated and follow this <a href='https://www.weforum.org/agenda/2020/04/covid-19-coronavirus-patient-home-care/'>advice</a></h2>";
                }
                elseif ($_SESSION['sum']==5){
                    echo "<h2 style=\"text-align: center\" >Possible suspected case for COVID-19 affected. Keep in isolation contact these number:  <br><b class='bg-danger'>National Call Center - 333</b><br>

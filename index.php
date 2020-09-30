@@ -133,14 +133,14 @@ $recovered = $response_data['recovered'];
     </div>
 </div>
 <section>
-<div class="bangladesh" id="bangladesh">
+<div class="bangladesh mx-auto" id="bangladesh">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <h1>Current Situation of Bangladesh</h1>
                 <h3>Total Cases: <?php echo $cases?></h3>
                 <h3>Total Death: <?php echo $deaths?></h3>
-                <h3>Cases of Today: <?php echo $today_dead?></h3>
+                <h3>Cases of Today<?php echo '('.date("d/m/Y").')'?>: <?php echo $today_dead?></h3>
                 <h3>Totoal Test: <?php echo $total_test?></h3>
             </div>
         </div>

@@ -40,3 +40,12 @@ body{
 .form-check-input{
     padding-right: 20px;
 }
+input{
+    border-radius: 20px;
+    border:  none;
+    padding: 10px 10px 10px 10px;
+}
+.bangladesh{
+    text-align: center;
+    align-content: center;
+}

@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="style.css">
 <div class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">COVID-19</a>
+        <a class="navbar-brand" href="<?php echo 'index.php'?>">COVID-19</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
